@@ -10,6 +10,7 @@ public class ConnectToDB {
          Class.forName("com.mysql.jdbc.Driver").newInstance();
          conn = DriverManager.getConnection(url, userName, password);
          System.out.println("Database connection successful.");
+		  //System.out.println("Database connection successful.");
       }
       catch (Exception e) {
          System.out.println("Cannot connect to database.");
